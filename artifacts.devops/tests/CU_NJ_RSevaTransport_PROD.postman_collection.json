@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "fb53f6fc-d0d9-4744-9660-73c2e38db7d0",
+		"name": "CU_NJ_GH_PROD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getTrack",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://10.26.24.15:30100/getTrack",
+					"protocol": "http",
+					"host": [
+						"10",
+						"26",
+						"24",
+						"15"
+					],
+					"port": "30100",
+					"path": [
+						"getTrack"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

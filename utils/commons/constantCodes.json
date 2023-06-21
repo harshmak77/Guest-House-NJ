@@ -1,0 +1,5 @@
+{
+    "TICKET_STATUS_TYPE_ADMIN": "Admin",
+    "TICKET_STATUS_TYPE_RESOLVER": "Resolver",
+    "TICKET_STATUS_TYPE_USER": "User"
+}

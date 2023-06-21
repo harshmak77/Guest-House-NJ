@@ -1,0 +1,11 @@
+{
+    "OPERATION_SUCCESS_CODE": {
+        "msg": "S"
+    },
+    "OPERATION_FAILED_CODE": {
+        "msg": "E"
+    },
+    "OPERATION_WARNING_CODE": {
+        "msg": "W"
+    }
+}

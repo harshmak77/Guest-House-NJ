@@ -1,0 +1,303 @@
+{
+  "collection": {
+    "_": {
+      "postman_id": "fb53f6fc-d0d9-4744-9660-73c2e38db7d0"
+    },
+    "item": [
+      {
+        "id": "5e01d59b-1350-4fcf-8252-614136950b99",
+        "name": "getTrack",
+        "request": {
+          "url": {
+            "protocol": "http",
+            "port": "30100",
+            "path": [
+              "getTrack"
+            ],
+            "host": [
+              "10",
+              "26",
+              "24",
+              "15"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "header": [
+            {
+              "name": "Content-Type",
+              "disabled": true,
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "method": "GET",
+          "body": {
+            "mode": "raw",
+            "raw": ""
+          }
+        },
+        "response": [],
+        "event": [],
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        }
+      }
+    ],
+    "event": [],
+    "variable": [],
+    "info": {
+      "_postman_id": "fb53f6fc-d0d9-4744-9660-73c2e38db7d0",
+      "name": "CU_NJ_GH_PROD",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    }
+  },
+  "environment": {
+    "id": "0893f928-ea51-4da3-8bc7-8035c7c37d26",
+    "values": []
+  },
+  "globals": {
+    "id": "5178bd6e-edfd-4f8a-b274-f7ef90ae2479",
+    "values": []
+  },
+  "run": {
+    "stats": {
+      "iterations": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "items": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "scripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "requests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "tests": {
+        "total": 1,
+        "pending": 0,
+        "failed": 0
+      },
+      "assertions": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "testScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      },
+      "prerequestScripts": {
+        "total": 0,
+        "pending": 0,
+        "failed": 0
+      }
+    },
+    "timings": {
+      "responseAverage": 382,
+      "started": 1556780421134,
+      "completed": 1556780421623
+    },
+    "executions": [
+      {
+        "cursor": {
+          "position": 0,
+          "iteration": 0,
+          "length": 1,
+          "cycles": 1,
+          "empty": false,
+          "eof": false,
+          "bof": true,
+          "cr": false,
+          "ref": "09aaee17-a37e-4bf8-9616-4d23ec61aa45",
+          "httpRequestId": "e88c87b2-ce86-42a8-b698-486ced704584"
+        },
+        "item": {
+          "id": "5e01d59b-1350-4fcf-8252-614136950b99",
+          "name": "getTrack",
+          "request": {
+            "url": {
+              "protocol": "http",
+              "port": "30100",
+              "path": [
+                "getTrack"
+              ],
+              "host": [
+                "10",
+                "26",
+                "24",
+                "15"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "name": "Content-Type",
+                "disabled": true,
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            }
+          },
+          "response": [],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        "request": {
+          "url": {
+            "protocol": "http",
+            "port": "30100",
+            "path": [
+              "getTrack"
+            ],
+            "host": [
+              "10",
+              "26",
+              "24",
+              "15"
+            ],
+            "query": [],
+            "variable": []
+          },
+          "header": [
+            {
+              "name": "Content-Type",
+              "disabled": true,
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "User-Agent",
+              "value": "PostmanRuntime/7.6.0"
+            },
+            {
+              "key": "Accept",
+              "value": "*/*"
+            },
+            {
+              "key": "Host",
+              "value": "10.26.24.15:30100"
+            },
+            {
+              "key": "accept-encoding",
+              "value": "gzip, deflate"
+            }
+          ],
+          "method": "GET",
+          "body": {
+            "mode": "raw",
+            "raw": ""
+          }
+        },
+        "response": {
+          "id": "714ef014-2d65-4e23-b649-09af2c2c3ee6",
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "X-DNS-Prefetch-Control",
+              "value": "off"
+            },
+            {
+              "key": "Strict-Transport-Security",
+              "value": "max-age=15552000; includeSubDomains"
+            },
+            {
+              "key": "X-Download-Options",
+              "value": "noopen"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "20"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"14-njt6nQREjR9N7hpuhGFDshCazcY\""
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 02 May 2019 07:00:21 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "stream": {
+            "type": "Buffer",
+            "data": [
+              123,
+              34,
+              100,
+              34,
+              58,
+              123,
+              34,
+              114,
+              101,
+              115,
+              117,
+              108,
+              116,
+              115,
+              34,
+              58,
+              91,
+              93,
+              125,
+              125
+            ]
+          },
+          "cookie": [],
+          "responseTime": 382,
+          "responseSize": 20
+        },
+        "id": "5e01d59b-1350-4fcf-8252-614136950b99"
+      }
+    ],
+    "transfers": {
+      "responseTotal": 20
+    },
+    "failures": [],
+    "error": null
+  }
+}

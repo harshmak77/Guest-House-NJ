@@ -1,0 +1,12 @@
+module.exports = {
+    create: "BAPI_CTREQUEST_CREATE",
+    read: "RFC_READ_TABLE",
+    update: "",
+    delete: "",
+    release: "BAPI_CTREQUEST_RELEASE",
+    release_tr : "Z_RSEVA_MGR_TR_REQUEST",
+    Z_IMPORT_TR_REQUEST: "Z_RSEVA_TMS_IMPORT_TR_REQUEST",
+    Z_GET_USER_LIST: "Z_RSEVA_GET_USER_LIST",
+    Z_QAPD_REQCHECK: "Z_QAPD_REQCHECK",
+    Z_TR_READ_GLOBAL_INFO_OF_REQ: "Z_TR_READ_GLOBAL_INFO_OF_REQ",
+}

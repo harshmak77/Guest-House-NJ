@@ -1,0 +1,270 @@
+{
+    "ERROR_GET_PLATFORM_LIST": {
+        "msg": "Failed To Get List Of Platform"
+    },
+    "ERROR_GET_APPLICATION_LIST": {
+        "msg": "Failed To Get Document List."
+    },
+    "ERROR_NO_RECORD_FOUND": {
+        "msg": "No Record Found"
+    },
+    "ERROR_FETCH_TO_CATEGORY": {
+        "msg": "Failed to fetch Category"
+    },
+    "ERROR_FETCH_TO_ITEMTYPE": {
+        "msg": "Failed to fetch item type"
+    },
+    "ERROR_GENERIC_ERROR_MGS": {
+        "msg": "Operation Failed"
+    },
+    "ERROR_PAYLOAD_DATA_MISSING": {
+        "msg": "Improper data supplied"
+    },
+    "ERROR_FETCH_TO_CR_DETAILS": {
+        "msg": "No Records found"
+    },
+    "ERROR_MSG_COOKIE_READ_FAILURE": {
+        "msg": "Failed to read user cookie"
+    },
+    "ERROR_MSG_COOKIE_STATUS": {
+        "msg": "F"
+    },
+    "ERROR_MSG_COOKIE_INCORRECT": {
+        "msg": "Incorrect MYSSO received"
+    },
+    "ERROR_MSG_COOKIE_EXPIRED": {
+        "msg": "MYSSO cookie has expired"
+    },
+    "ERROR_MSG_NO_IMPROPER_SP_CALL": {
+        "msg": "Improper data found"
+    },
+    "ERROR_MSG_DOWNLOAD_ATTACHMENT": {
+        "msg": "Failed to download attachment"
+    },
+    "ERROR_MSG_DELETE_ATTACHMENT": {
+        "msg": "Failed to delete attachment"
+    },
+    "ERROR_MSG_UPLOAD_ATTACHMENT": {
+        "msg": "Failed to upload attachment"
+    },
+    "ERROR_MSG_GET_COMMENTS": {
+        "msg": "Failed to get comments"
+    },
+    "ERROR_MSG_SAVE_USER_COMMENTS": {
+        "msg": "Failed to save user comments"
+    },
+    "ERROR_MSG_GET_USER_ALL_CR": {
+        "msg": "Failed to get user user created CR"
+    },
+    "ERROR_MSG_FAILED_TO_RELEASE_CR": {
+        "msg": "Failed to Release CR"
+    },
+    "ERROR_MSG_FAILED_TO_SAVE_DRAFT_CR": {
+        "msg": "Failed to save CR as Draft"
+    },
+    "ERROR_MSG_FAILED_TO_GET_CR_DETAILS": {
+        "msg": "Failed to get CR Details"
+    },
+    "ERROR_MSG_TICKET_OPS_FAILED": {
+        "msg": "Operation on ticket Failed, please contact your administrator"
+    },
+    "ERROR_OPERATION_ROLE_GETAUTH": {
+        "msg": "Failed to fetch role"
+    },
+    "ERROR_OPERATION_ROLE_CHECKAUTH": {
+        "msg": "Failed to check role"
+    },
+    "ERROR_OPERATION_COORDINATOR": {
+        "msg": "Cordinator operation Failed"
+    },
+    "ERROR_MSG_INCORRECT_STEPNAME": {
+        "msg": "Incorrect StepName Entered"
+    },
+    "ERROR_FETCHING_ROLES_AUTH_API": {
+        "msg": "No Role found for this CR"
+    },
+    "ERROR_FAILED_TO_CREATE_AZURE_WI": {
+        "msg": "Failed to create Task in Azure"
+    },
+    "ERROR_MSG_INCORRECT_CATEGORY": {
+        "msg": "Improper category selected"
+    },
+    "ERROR_MSG_CREATE_WI_AZURE": {
+        "msg": "Work item creation in Azure Failed."
+    },
+    "ERROR_MSG_PROJECT_FETCHED": {
+        "msg": " Failed to Fetch Project List."
+    },
+    "ERROR_MSG_DISCUSSION_BOARD": {
+        "msg": " Failed to Fetch Discussion Board."
+    },
+    "ERROR_MSG_GENERIC_OPERATION": {
+        "msg": "Operations Failed."
+    },
+    "ERROR_MSG_CR_WITHDRAWN": {
+        "msg": "Failed to Withdraw CR."
+    },
+    "ERROR_MSG_SEARCH_USER_SELF": {
+        "msg": "No User Found."
+    },
+    "ERROR_MSG_STATUS_CLOSED": {
+        "msg": "The CR can only be closed once the Azure Task are closed."
+    },
+    "ERROR_MSG_CR_CLOSED": {
+        "msg": "Failed to Close CR."
+    },
+    "ERROR_FETCH_TO_PRIORITY": {
+        "msg": "Failed to fetch Priority"
+    },
+    "ERROR_FETCH_TO_CATEGORY1": {
+        "msg": "Failed to fetch Category"
+    },
+    "ERROR_ADD_TO_CATEGORY": {
+        "msg": "Failed to add Category, Sub_Category"
+    },
+    "ERROR_FETCH_TO_SUBCATEGORY": {
+        "msg": "Failed to fetch Sub Category"
+    },
+    "ERROR_FETCH_TO_IMPACT": {
+        "msg": "Failed to fetch Impact"
+    },
+    "ERROR_FETCH_TO_SERVICE": {
+        "msg": "Failed to fetch Service"
+    },
+    "ERROR_FETCH_TO_RISK": {
+        "msg": "Failed to fetch Risk"
+    },
+    "ERROR_MSG_FETCH_PROCESS_MODEL_DETAILS": {
+        "msg": "Failed to fetch process model details"
+    },
+    "ERROR_MSG_POST_PROCESS_MODEL_DETAILS": {
+        "msg": "Failed to add process model entry"
+    },
+    "ERROR_MSG_UPDATE_PROCESS_MODEL": {
+        "msg": "Failed to update process model"
+    },
+    "ERROR_MSG_FETCH_ASSIGNMENT_GROUP_DETAILS": {
+        "msg": "Failed to fetch assignment group details"
+    },
+    "ERROR_MSG_POST_ASSIGNMENT_GROUP_DETAILS": {
+        "msg": "Failed to add assignment group entry"
+    },
+    "ERROR_MSG_UPDATE_ASSIGNMENT_GROUP_DETAILS": {
+        "msg": "Failed to Assignment group details"
+    },
+    "ERROR_FETCH_TO_CR_DETAIL": {
+        "msg": "Failed to fetch CR deatils"
+    },
+    "ERROR_CATEGORY_CONFIG": {
+        "msg": "Failed To Update Data"
+    },
+    "ERROR_FETCH_HEADERS": {
+        "msg": "Failed to fetch Headers"
+    },
+    "ERROR_FETCH_USER_SPECIFIC_HEADERS": {
+        "msg": "Failed to fetch Headers for logged User"
+    },
+    "ERROR_FETCH_FIELD_SELECTION_DETAILS": {
+        "msg": "Failed to fetch field selection details"
+    },
+    "ERROR_MSG_INCORRECT_FLAG": {
+        "msg": "Incorrect Flag received"
+    },
+    "ERROR_MSG_CR_CREATED": {
+        "msg": "Failed to create CR"
+    },
+    "ERROR_MSG_UNAUTHORISED_ACCESS": {
+        "msg": "You are not authorised to access this application"
+    },
+    "ERROR_MSG_INVALID_DATA": {
+        "msg": "Invalid data"
+    },
+    "ERROR_MSG_CR_BUCKET_DATA_OP_FAILED": {
+        "msg": "Failed to fetch CR bucket data"
+    },
+    "ERROR_MSG_SQL_INVALID_INPUT": {
+        "msg": "Invalid input provided"
+    },
+    "ERROR_MSG_ATTACMENT_SIZE_LIMIT": {
+        "msg": "Uploaded attachment exceeds allowed 20 MB limit"
+    },
+    "ERROR_MSG_ENTRY_EXIST": {
+        "msg": "Entry already exist"
+    },
+    "ERROR_MSG_MONGO_OP_FAILED": {
+        "msg": "Mongo db operation failed"
+    },
+    "ERROR_MSG_SQL_CONNECTION_FAILED": {
+        "msg": "Database connection not established"
+    },
+    "FAILED_TO_DELETE_CONTRIBUTOR": {
+        "msg": "Contributor removed successfully"
+    },
+    "ERROR_STATE_MODEL_NOT_FOUND": {
+        "msg": "State Model not found"
+    },
+    "ERROR_MSG_VALIDATE_CR": {
+        "msg": "Failed to validate CR"
+    },
+    "ERROR_MSG_INVALID_CR": {
+        "msg": "Change Request is Not Valid"
+    },
+    "ERROR_ADD_CONTRIBUTOR": {
+        "msg": "Failed to add contributor"
+    },
+    "ERROR_MSG_CR_UPDATED": {
+        "msg": "Failed to update CR"
+    },
+    "ERROR_MSG_AZURE_PROJECT_FETCH": {
+        "msg": "Failed To get Projects"
+    },
+    "ERROR_MSG_AZURE_COLLECTION_FETCH": {
+        "msg": "Failed To get azure collection"
+    },
+    "ERROR_MSG_AZURE_LINK": {
+        "msg": "Failed to delete record"
+    },
+    "ERROR_MSG_AZURE_WI_FETCH": {
+        "msg": "Failed To fetch Rseva businessId with azure projectId"
+    },
+    "ERROR_MSG_MAPPING_AZURE_WI_SERVICEID": {
+        "msg": "Rseva businessId with azure projectId mapping generated Failed."
+    },
+    "ERROR_MSG_PROJECT_FAILED_FETCHED": {
+        "msg": " Failed to Fetch Project."
+    },
+    "ERROR_MSG_TIMELINE_FETCHED": {
+        "msg": " Failed to fetch timeline."
+    },
+    "ERROR_MSG_DUPLICATE_RECORD": {
+        "msg": "Duplicate record found"
+    },
+    "ERROR_MSG_LANDSCAPE_COLLECTION_FETCH": {
+        "msg": "Failed To fetch landscape list"
+    },
+    "ERROR_MSG_RECORD_NOT_FOUND": {
+        "msg": "Record not found"
+    },
+    "ERROR_MSG_SERVICE_LIST_FETCH": {
+        "msg": "Failed To fetch server list"
+    },
+    "ERROR_MSG_ATTACHMENT": {
+        "msg": "No attachment provided"
+    },
+    "ERROR_MSG_TR_MERGED": {
+        "msg": "TR can not be merged"
+    },
+    "ERROR_MSG_TR_INCOMPLETE_REQUEST": {
+        "msg": "incomplete Request payload"
+    },
+    "ERROR_MSG_USER_PREF": {
+        "msg": "Server group user prefrence not set"
+    },
+    "ERROR_MSG_LANDSCAPE_DATA_MISSING": {
+        "msg": "landscape data not found"
+    },
+    "ERROR_MSG_INVALID_PAYLOAD": {
+        "msg": "Invalid payload."
+    }
+
+}

@@ -1,0 +1,188 @@
+{
+    "SUCCESS_MSG_CATEGORY_FETCHED": {
+        "msg": "Category fetched Successfully."
+    },
+    "SUCCESS_MSG_ITEMTYPE_FETCHED": {
+        "msg": "Item type fetched Successfully."
+    },
+    "SUCCESS_MSG_CR_DRAFT_OPERATION": {
+        "msg": "CR saved as Draft Successfully."
+    },
+    "SUCCESS_MSG_CR_DETAILS_FETCHED": {
+        "msg": "CR Details fetched Successfully."
+    },
+    "SUCCESS_MSG_CR_RELEASED": {
+        "msg": "CR released Successfully."
+    },
+    "SUCCESS_MSG_CATEGORY_ADDED": {
+        "msg": "Category, Sub_Category added Successfully."
+    },
+    "SUCCESS_MSG_USER_COMMENT_ADDED": {
+        "msg": "Comment added Successfully."
+    },
+    "SUCCESS_MSG_USER_COMMENT_FETCHED": {
+        "msg": "Comment fetched Successfully."
+    },
+    "SUCCESS_MSG_FILE_ATTACHED": {
+        "msg": "File Attached Successfully."
+    },
+    "SUCCESS_MSG_FILE_DELETED": {
+        "msg": "File deleted Successfully."
+    },
+    "SUCCESS_MSG_FILE_DOWNLOAD": {
+        "msg": "File Downloaded Successfully."
+    },
+    "SCCESS_MSG_SEARCH_USER_SELF": {
+        "msg": "User Details Fetched Successfully."
+    },
+    "SUCCESS_MSG_CR_APPROVED_REJECTED": {
+        "msg": "CR Processed Successfully."
+    },
+    "SUCCESS_MSG_CR_APPROVED": {
+        "msg": "CR Approved Successfully."
+    },
+    "SUCCESS_MSG_CR_REJECTED": {
+        "msg": "CR Rejected Successfully."
+    },
+    "SUCCESS_MSG_PENDINGWF_FETCHED": {
+        "msg": "Fetched Pending CR for Approval Successfully."
+    },
+    "SUCCESS_MSG_CONTRIBUTOR_ADDED": {
+        "msg": "Contributor Added Successfully."
+    },
+    "SUCCESS_MSG_CONTRIBUTOR_FETCHED": {
+        "msg": "Contributors Fetched Successfully."
+    },
+    "SUCCESS_MSG_CONTRIBUTOR_DELETED": {
+        "msg": "Contributor deleted Successfully."
+    },
+    "SUCCESS_MSG_CHECK_ACUTHENTICATION": {
+        "msg": "Authenticated Successfully. "
+    },
+    "SUCCESS_MSG_AUTHENTICATION_USER": {
+        "msg": "Approvers list fetched Successfully."
+    },
+    "SUCCESS_MSG_CREATE_WI_AZURE": {
+        "msg": "Work item created in Azure Successfully."
+    },
+    "SUCCESS_MSG_PROJECT_FETCHED": {
+        "msg": "Project List Fetched Successfully."
+    },
+    "SUCCESS_MSG_DISCUSSION_BOARD": {
+        "msg": "Discussion Board Fetched Successfully."
+    },
+    "SUCCESS_MSG_CR_WITHDRAWN": {
+        "msg": "CR Withdrawn Successfully."
+    },
+    "SUCCESS_MSG_CR_CREATED": {
+        "msg": "CR created Successfully"
+    },
+    "SUCCESS_MSG_COLLECTION_FETCHED": {
+        "msg": "Collection list fetched successfully."
+    },
+    "SUCCESS_MSG_FILE_NOT_FOUND": {
+        "msg": "File not found"
+    },
+    "SUCCESS_MSG_ADMIN_OPERATION": {
+        "msg": "Admin Operations completed successfully"
+    },
+    "SUCCESS_MSG_GENERIC_OPERATION": {
+        "msg": "Operations successfull"
+    },
+    "SUCCESS_MSG_COMPLETED_OPERATION": {
+        "msg": "Operations completed"
+    },
+    "SUCCESS_MSG_CR_EDITED": {
+        "msg": "CR updated Successfully"
+    },
+    "SUCCESS_MSG_CR_CLOSED": {
+        "msg": "CR Closed Successfully."
+    },
+    "SUCCESS_MSG_PRIORITY_FETCHED": {
+        "msg": "Priority list fetched Successfully."
+    },
+    "SUCCESS_MSG_CATEGORY1_FETCHED": {
+        "msg": "Category list fetched Successfully."
+    },
+    "SUCCESS_MSG_SUBCATEGORY_FETCHED": {
+        "msg": "Sub Category list fetched Successfully."
+    },
+    "SUCCESS_MSG_IMPACT_FETCHED": {
+        "msg": "Impact list fetched Successfully."
+    },
+    "SUCCESS_MSG_SERVICE_FETCHED": {
+        "msg": "Service list fetched Successfully."
+    },
+    "SUCCESS_MSG_GETRISK_FETCHED": {
+        "msg": "Risk list fetched Successfully."
+    },
+    "SUCCESS_MSG_PROCESS_MODEL_ENTRY_ADDED": {
+        "msg": "Process Model entry added Successfully."
+    },
+    "SUCCESS_MSG_PROCESS_MODEL_DETAILS_FETCHED": {
+        "msg": "Process Model Details fetched Successfully."
+    },
+    "SUCCESS_MSG_PROCESS_MODEL_DESCRIPTION_UPDATED": {
+        "msg": "Process Model updated Successfully."
+    },
+    "SUCCESS_MSG_ASSIGNMENT_GROUP_ENTRY_ADDED": {
+        "msg": "Assignment group entry added Successfully."
+    },
+    "SUCCESS_MSG_ASSIGNMENT_GROUP_DETAILS_FETCHED": {
+        "msg": "Assignment group Details fetched Successfully."
+    },
+    "SUCCESS_MSG_ASSIGNMENT_GROUP_DETAILS_UPDATED": {
+        "msg": "Assignment group details updated Successfully."
+    },
+    "SUCCESS_MSG_GET_TEAM_WISE_CR_DETAILS": {
+        "msg": "Team wise CR details fetched Successfully."
+    },
+    "SUCCESS_MSG_POST_CATEGORY_CONFIG": {
+        "msg": " Data Updated Successfully."
+    },
+    "SUCCESS_MSG_GET_Headers": {
+        "msg": "Headers value fetched Successfully."
+    },
+    "SUCCESS_MSG_GET_USER_SPECIFIC_HEADERS": {
+        "msg": "Headers value fetched Successfully for logged user."
+    },
+    "SUCCESS_MSG_GET_FIELD_SELECTION_DETAILS": {
+        "msg": "Field selection details fetched Successfully."
+    },
+    "SUCCESS_MSG_CR_BUCKET_DATA": {
+        "msg": "CR bucket data fetched Successfully."
+    },
+    "SUCCESS_MSG_CONTRIBUTOR_ADD": {
+        "msg": "Contributor added successfully."
+    },
+    "SUCCESS_MSG_CR_VALIDATE": {
+        "msg": "CR validated successfully"
+    },
+    "SUCCESS_MSG_CR_UPDATED": {
+        "msg": "CR updated successfully"
+    },
+    "SUCCESS_MSG_AZURE_LINK": {
+        "msg": "Record deleted successfully"
+    },
+    "SUCCESS_MSG_AZURE_WI_SERVICEID_FETCHED": {
+        "msg": "Rseva businessId with azure projectId list fetched successfully."
+    },
+    "SUCCESS_MSG_MAPPING_AZURE_WI_SERVICEID": {
+        "msg": "Rseva businessId with azure projectId mapping generated."
+    },
+    "SUCCESS_MSG_WI_PROJECT_FETCHED": {
+        "msg": "Project Fetched Successfully."
+    },
+    "SUCCESS_MSG_TIMELINE_FETCHED": {
+        "msg": "Timeline Fetched Successfully."
+    },
+    "SUCCESS_MSG_TMS_ACTION_FETCHED": {
+        "msg": "TMS Action Fetched Successfully."
+    },
+    "SUCCESS_MSG_FILE": {
+        "msg": "File created successfully"
+    },
+    "SUCCESS_MSG_ACCESS_LINK": {
+        "msg": "Screen access successfully"
+    }
+}

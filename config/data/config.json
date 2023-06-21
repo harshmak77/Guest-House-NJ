@@ -1,0 +1,82 @@
+{
+  "server": {
+    "port": 7218
+  },
+  "app": {
+    "prefix": "/api/gh",
+    "secret": "ilovenodejsanditis"
+  },
+  "mongoDb": {
+    "dbName": "RITSMDB",
+    "host1": "10.26.24.45",
+    "host2": "10.26.24.35",
+    "host3": "10.26.24.39",
+    "user": "RITSMDB_rw",
+    "password": "PievrhFrW",
+    "replicaSet": "mongo-rep-server",
+    "dbConnectionString": "mongodb://hr_common_rw:cNkGKUs3r@10.26.24.253:27017/hr_common",
+    "connectionPool": 2
+  },
+  "sql_db": {
+    "database": "RCMFOSA",
+    "host": "10.26.24.170",
+    "user": "RCMFOSA_rw",
+    "password": "d3VisID3vamv3c0mp13xRYy"
+  },
+  "cors": {
+    "whitelist": "http://localhost:7218/;http://rsevadev.ril.com;http://saasdev.ril.com;http://localhost:7196;http://localhost:7195;http://localhost:8080;http://localhost:2022;http://crdev.ril.com"
+  },
+  "abap": {
+    "userDetails": "P10040119",
+    "login": "Devp123"
+  },
+  "mongoCollection": {
+    "userMaster": "MD13"
+  },
+  "url": {
+    "generateToken": "http://hrplatformdev.ril.com/api/module-s/generateToken",
+    "azureDevProjects": "http://azuredevopsdv.ril.com/",
+    "kibanaUrl": "http://10.26.24.32:5044",
+    "myssocookie": "http://ssodev.ril.com/decryptHeader",
+    "infoByDomainIDSelf": "http://abaputilitiesdev.ril.com:86/EmpInformation.asmx?op=InfoByDomainIDSelf",
+    "searchUsers": "http://abaputilitiesdev.ril.com:86/EmpInformation.asmx?op=SearchUsers",
+    "infoByDomainID": "http://abaputilitiesdev.ril.com:86/EmpInformation.asmx?op=InfoByDomainID",
+    "emailNotification": "http://abaputilitiesdev.ril.com/mailservice/Sendmail.asmx?op=Send",
+    "email": {
+      "emailNotification": "http://saasdev.ril.com/rflow/wfcommon/generateEmail",
+      "from": "entapps.support@ril.com",
+      "sendMailFlag": 1
+    },
+    "authPlatform": {
+      "checkauth": "http://accesscontroldev.ril.com/api/checkauth",
+      "getauth": "http://accesscontroldev.ril.com/api/getauth",
+      "getauthUser": "http://accesscontroldev.ril.com/api/getauthusers",
+      "getAllAuth": "http://accesscontroldev.ril.com/api/getallauth"
+    },
+    "dms": {
+      "upload_url": "http://commonutilsdev.ril.com/docmgmt/upload/s3/fileFS",
+      "upload_folder_ID": "5e623505ecd4d90011904af9",
+      "upload_password": "vuyiheguxi",
+      "download_url": "http://commonutilsdev.ril.com/docmgmt/download/s3/fileFS",
+      "download_token_url": "http://commonutilsdev.ril.com/docmgmt/download/s3/fileFSRequest"
+    }
+  },
+  "authorization": {
+    "azureDevops_auth": "Basic SU5cRW50YXBwbWdtdG9jLjhiOnBlanl5ZjU3Z3Fjc29peTJzeWl3ZDR2YXFlZ2wya3dxa2N6anM2M2JrdDVyc3l6bWs0eGE=",
+    "GRC": {
+      "adminRole": "IM03004",
+      "resolverRole": "IM03003"
+    }
+  },
+  "utils": {
+    "mimeType": "image/png;image/jpg;image/jpeg;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/msword;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;application/vnd.ms-excel;application/pdf",
+    "extension": "png;jpg;jpeg;pdf;doc;docx;xls;xlsx",
+    "incident": {
+      "processModelId": "0037b96d-0962-11eb-8e57-000d3af0328d"
+    },
+    "exceptionCookie": {
+      "origin": "https://azuredevopsdv.ril.com;http://localhost:7218/",
+      "route": "importTransportReq"
+    }
+  }
+}

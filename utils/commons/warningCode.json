@@ -1,0 +1,8 @@
+{
+    "WARNING_NO_RECORD_FOUND": {
+        "msg": "No Records Found."
+    },
+    "WARNING_TR_IN_PROCESS": {
+        "msg": "Transport Request movement still in progress"
+    }
+}

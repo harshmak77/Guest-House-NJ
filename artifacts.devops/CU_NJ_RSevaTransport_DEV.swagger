@@ -1,0 +1,2071 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Node RFC - Calling SAP Remote Function module through Node API",
+    "version": "1.0",
+    "title": "CU_NJ_GH",
+    "termsOfService": "urn:tos",
+    "contact": {},
+    "license": {
+      "name": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  },
+  "host": "http://rsevadev.ril.com/",
+  "basePath": "/itsm/tr",
+  "produces": [
+    "application/json",
+    "application/xml"
+  ],
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "securityDefinitions": {
+    "JWT": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "Authorization",
+      "description": ""
+    }
+  },
+  "paths": {
+    "/transportReq": {
+      "get": {
+        "parameters": [
+          {
+            "name": "crTicketNumber",
+            "in": "query",
+            "description": "crTicketNumber",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "env",
+            "in": "query",
+            "description": "Environment",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Transport Collection"
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "the transport request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/transportReq"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Transport Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An Array of objects reassigned tickets"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "default": {
+            "description": "Unexpected error"
+          }
+        }
+      }
+    },
+    "/transportData": {
+      "get": {
+        "parameters": [
+          {
+            "name": "pipelineId",
+            "in": "query",
+            "description": "pipeline Id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Transport Collection"
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/releaseTransport": {
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "transport body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/releaseTransport"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Transport Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An Array of objects reassigned tickets"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "default": {
+            "description": "Unexpected error"
+          }
+        }
+      }
+    },
+    "/releasePipeline": {
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "transport body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/releasePipeline"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Transport Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An Array of objects reassigned tickets"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "default": {
+            "description": "Unexpected error"
+          }
+        }
+      }
+    },
+    "/landscape": {
+      "get": {
+        "parameters": [],
+        "description": "",
+        "tags": [
+          "landscape Collection"
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "create and update landscape Request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/landscape"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "landscape Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object of craeted and updated landscope",
+            "schema": {
+              "$ref": "#/definitions/landscape"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/deleteLandscape": {
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "the data",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/deleteLandscape"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "landscape Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object of deleted landscape"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "default": {
+            "description": "Unexpected error"
+          }
+        }
+      }
+    },
+    "/serverList": {
+      "get": {
+        "parameters": [
+          {
+            "name": "type",
+            "in": "query",
+            "description": "Landscape Type",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "description": "",
+        "tags": [
+          "landscape Collection"
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/importTransportReq": {
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "the data",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/importTransportReq"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "TR Operations"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object of deleted landscape"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "default": {
+            "description": "Unexpected error"
+          }
+        }
+      }
+    },
+    "/checklist": {
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "update checklist Request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/checklist"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "checklist Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object of updated checklist",
+            "schema": {
+              "$ref": "#/definitions/checklist"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "get": {
+        "parameters": [
+          {
+            "name": "transportRequest",
+            "in": "query",
+            "description": "transportRequest",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "description": "",
+        "tags": [
+          "checklist Collection"
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/checklistDocument": {
+      "post": {
+        "parameters": [
+          {
+            "name": "crTicketNumber",
+            "in": "formData",
+            "description": "the crTicketNumber in case of CR",
+            "required": false,
+            "type": "number"
+          },
+          {
+            "name": "checkListTypeCode",
+            "in": "formData",
+            "description": "the checkListTypeCode in case of CR",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "displayText",
+            "in": "formData",
+            "description": "the displayText in case of CR",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "releaseNum",
+            "in": "formData",
+            "description": "the releaseNum in case of CR",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "files",
+            "in": "formData",
+            "description": "the files",
+            "required": false,
+            "type": "file"
+          }
+        ],
+        "description": "",
+        "tags": [
+          "checklist Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object of uploaded document"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "default": {
+            "description": "Unexpected error"
+          }
+        },
+        "consumes": [
+          "multipart/form-data"
+        ]
+      }
+    },
+    "/createPDF": {
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "update checklist Request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/createPDF"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "PDF Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object of updated checklist",
+            "schema": {
+              "$ref": "#/definitions/createPDF"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "default": {
+            "description": "Unexpected error"
+          }
+        }
+      }
+    },
+    "/tmsAction": {
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "the tms action request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/tmsActionReq"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "TMS Action Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An Array of objects reassigned tickets"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          },
+          "default": {
+            "description": "Unexpected error"
+          }
+        }
+      },
+      "get": {
+        "parameters": [],
+        "description": "",
+        "tags": [
+          "TMS Action Collection"
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/buildCheckList": {
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "buildCheckList Request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/buildCheckList"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "checklist Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object of buildCheckList",
+            "schema": {
+              "$ref": "#/definitions/buildCheckList"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/gateCheckList": {
+      "get": {
+        "parameters": [
+          {
+            "name": "crTicketNumber",
+            "in": "query",
+            "description": "crTicketNumber",
+            "required": true,
+            "type": "number"
+          },
+          {
+            "name": "releaseNumber",
+            "in": "query",
+            "description": "releaseNumber",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "description": "",
+        "tags": [
+          "checklist Collection"
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "gateCheckList Request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/gateCheckList"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "checklist Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object of gateCheckList",
+            "schema": {
+              "$ref": "#/definitions/gateCheckList"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/qatransportedlist": {
+      "get": {
+        "parameters": [],
+        "description": "",
+        "tags": [
+          "TR Operations"
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/searchSAPUsers": {
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "searchSAPUsers Request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/searchSAPUsers"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Utility"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object of User Details"
+          }
+        }
+      }
+    },
+    "/crcheckTransport": {
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "crcheckTransport Request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/crcheckTransport"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Utility"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object of User Details"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/releaseMergeStatusSap": {
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "crcheckTransport Request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/releaseMergeStatusSap"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Transport Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object of User Details"
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/sequencePDtransport": {
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "transport Request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/sequencePDtransport"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Transport Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object of transport",
+            "schema": {
+              "$ref": "#/definitions/sequencePDtransport"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/qaTransportList": {
+      "get": {
+        "parameters": [],
+        "description": "",
+        "tags": [
+          "TR Operations"
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/qaOutboundList": {
+      "get": {
+        "parameters": [],
+        "description": "",
+        "tags": [
+          "TR Operations"
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/releaseTRBatch": {
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "transport Request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/releaseTRBatch"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Transport Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object of transport",
+            "schema": {
+              "$ref": "#/definitions/releaseTRBatch"
+            }
+          },
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/trImportStatus": {
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "trImportStatus Request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/trImportStatus"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Transport Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object of User Details"
+          }
+        }
+      }
+    },
+    "/objectLock": {
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "trImportStatus Request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/objectLock"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Transport Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object of User Details"
+          }
+        }
+      }
+    },
+    "/releasedtoPD": {
+      "get": {
+        "parameters": [],
+        "description": "",
+        "tags": [
+          "Transport Collection"
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/gateCheckListAll": {
+      "get": {
+        "parameters": [
+          {
+            "name": "crTicketNumber",
+            "in": "query",
+            "description": "crTicketNumber",
+            "required": true,
+            "type": "number"
+          },
+          {
+            "name": "releaseNumber",
+            "in": "query",
+            "description": "releaseNumber",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "description": "",
+        "tags": [
+          "checklist Collection"
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/removeObjectLock": {
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "trImportStatus Request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/removeObjectLock"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Transport Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object of User Details"
+          }
+        }
+      }
+    },
+    "/releaseRemarks": {
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "trImportStatus Request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/releaseRemarks"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Transport Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object of User Details"
+          }
+        }
+      }
+    },
+    "/changeRequestDocument": {
+      "get": {
+        "parameters": [
+          {
+            "name": "crTicketNumber",
+            "in": "query",
+            "description": "crTicketNumber",
+            "required": true,
+            "type": "number"
+          },
+          {
+            "name": "releaseNumber",
+            "in": "query",
+            "description": "releaseNumber",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "description": "",
+        "tags": [
+          "checklist Collection"
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/sequenceTransport": {
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "sequenceTransport Request",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/sequenceTransport"
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Transport Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object of User Details"
+          }
+        }
+      }
+    },
+    "/transportTrackLead": {
+      "post": {
+        "parameters": [
+          {
+            "name": "data",
+            "in": "body",
+            "description": "trImportStatus Request",
+            "required": true,
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/releaseRemarks"
+              }
+            }
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Transport Collection"
+        ],
+        "responses": {
+          "200": {
+            "description": "An object of User Details"
+          }
+        }
+      },
+      "get": {
+        "parameters": [
+          {
+            "name": "crTicketNumber",
+            "in": "query",
+            "description": "crTicketNumber",
+            "required": true,
+            "type": "number"
+          },
+          {
+            "name": "releaseNumber",
+            "in": "query",
+            "description": "releaseNumber",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "description": "",
+        "tags": [
+          "Transport Collection"
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "No Data Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Error": {
+      "required": [
+        "message"
+      ],
+      "properties": {
+        "message": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    },
+    "object": {
+      "required": [
+        "data"
+      ],
+      "properties": {
+        "data": {
+          "type": "object",
+          "description": ""
+        }
+      }
+    },
+    "transportReq": {
+      "required": [
+        "crTicketNumber",
+        "landscapeClient"
+      ],
+      "properties": {
+        "crTicketNumber": {
+          "type": "number",
+          "description": "crTicketNumber"
+        },
+        "landscapeClient": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/landscapeClient"
+          }
+        }
+      }
+    },
+    "landscapeClient": {
+      "required": [
+        "sys",
+        "client"
+      ],
+      "properties": {
+        "sys": {
+          "type": "string",
+          "description": "system SAP"
+        },
+        "client": {
+          "type": "number",
+          "description": "client SAP"
+        },
+        "pipeline": {
+          "type": "string",
+          "description": "pipeline"
+        },
+        "pipelineId": {
+          "type": "string",
+          "description": "pipelineId"
+        },
+        "pipelineUrl": {
+          "type": "string",
+          "description": "pipelineUrl"
+        },
+        "description": {
+          "type": "string",
+          "description": "description of task"
+        },
+        "customizing": {
+          "type": "boolean",
+          "description": "customizing flag"
+        },
+        "workbench": {
+          "type": "boolean",
+          "description": "workbench flag"
+        },
+        "task": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/task"
+          }
+        }
+      }
+    },
+    "task": {
+      "required": [
+        "domainId"
+      ],
+      "properties": {
+        "domainId": {
+          "type": "string",
+          "description": "domainId of user"
+        },
+        "employeeId": {
+          "type": "string",
+          "description": "employeeId of user"
+        }
+      }
+    },
+    "releaseTransport": {
+      "required": [
+        "crTicketNumber"
+      ],
+      "properties": {
+        "crTicketNumber": {
+          "type": "string",
+          "description": "the cr Ticket Number"
+        },
+        "TransportReqs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "releasePipeline": {
+      "required": [
+        "crTicketNumber"
+      ],
+      "properties": {
+        "crTicketNumber": {
+          "type": "string",
+          "description": "the cr Ticket Number"
+        },
+        "transportRequests": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/transport"
+          }
+        }
+      }
+    },
+    "transport": {
+      "required": [
+        "TRNUM"
+      ],
+      "properties": {
+        "TRNUM": {
+          "type": "string",
+          "description": "transport Request No"
+        }
+      }
+    },
+    "landscape": {
+      "required": [
+        "landscapeLabel",
+        "client",
+        "landscapeType",
+        "AppServer",
+        "sysID",
+        "instanceNumber",
+        "userID",
+        "pwd",
+        "projectId"
+      ],
+      "properties": {
+        "Objectid": {
+          "type": "string",
+          "description": "the Objectid (Used when need to be update)"
+        },
+        "landscapeLabel": {
+          "type": "string",
+          "description": "the landscapeLabel"
+        },
+        "client": {
+          "type": "number",
+          "description": "the client"
+        },
+        "landscapeType": {
+          "type": "string",
+          "description": "the landscapeType"
+        },
+        "AppServer": {
+          "type": "string",
+          "description": "the AppServer"
+        },
+        "sysID": {
+          "type": "string",
+          "description": "the sysID"
+        },
+        "instanceNumber": {
+          "type": "string",
+          "description": "the instanceNumber"
+        },
+        "userID": {
+          "type": "string",
+          "description": "the userID"
+        },
+        "pwd": {
+          "type": "string",
+          "description": "the pwd"
+        },
+        "projectId": {
+          "type": "string",
+          "description": "the projectId"
+        },
+        "description": {
+          "type": "string",
+          "description": "the description"
+        }
+      }
+    },
+    "deleteLandscape": {
+      "required": [
+        "object_id"
+      ],
+      "properties": {
+        "object_id": {
+          "type": "string",
+          "description": "the object id"
+        }
+      }
+    },
+    "importTransportReq": {
+      "required": [
+        "transportRequest",
+        "environment"
+      ],
+      "properties": {
+        "transportRequest": {
+          "type": "string",
+          "description": "the transportRequest"
+        },
+        "environment": {
+          "type": "string",
+          "description": "the transportRequest"
+        }
+      }
+    },
+    "checklist": {
+      "required": [
+        "srno"
+      ],
+      "properties": {
+        "srno": {
+          "type": "string",
+          "description": "code"
+        },
+        "displayText": {
+          "type": "string",
+          "description": "displayText"
+        },
+        "options": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/options"
+          }
+        },
+        "attachmentTag": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/attachmentTag"
+          }
+        }
+      }
+    },
+    "createPDF": {
+      "required": [],
+      "properties": {
+        "pdfData": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/pdfData"
+          }
+        }
+      }
+    },
+    "pdfData": {
+      "required": [
+        "TYPE",
+        "OBJECT",
+        "OBJ_NAME",
+        "QA_REQ",
+        "QA_VER",
+        "PD_REQ",
+        "PD_VER",
+        "LOCK_REQ",
+        "LOCK_VER",
+        "LOCK_CD",
+        "REMARKS",
+        "WHERE_USED_TEXT"
+      ],
+      "properties": {
+        "TYPE": {
+          "type": "string",
+          "description": "TYPE"
+        },
+        "OBJECT": {
+          "type": "string",
+          "description": "OBJECT"
+        },
+        "OBJ_NAME": {
+          "type": "string",
+          "description": "OBJ_NAME"
+        },
+        "QA_REQ": {
+          "type": "string",
+          "description": "transport Request No"
+        },
+        "QA_VER": {
+          "type": "string",
+          "description": "transport Request No"
+        },
+        "PD_REQ": {
+          "type": "string",
+          "description": "transport Request No"
+        },
+        "PD_VER": {
+          "type": "string",
+          "description": "transport Request No"
+        },
+        "LOCK_REQ": {
+          "type": "string",
+          "description": "transport Request No"
+        },
+        "LOCK_VER": {
+          "type": "string",
+          "description": "transport Request No"
+        },
+        "LOCK_CD": {
+          "type": "string",
+          "description": "transport Request No"
+        },
+        "REMARKS": {
+          "type": "string",
+          "description": "transport Request No"
+        },
+        "WHERE_USED_TEXT": {
+          "type": "string",
+          "description": "transport Request No"
+        }
+      }
+    },
+    "tmsActionReq": {
+      "required": [
+        "modelLabel",
+        "modelId",
+        "TMSAction"
+      ],
+      "properties": {
+        "modelLabel": {
+          "type": "string",
+          "description": "modelLabel"
+        },
+        "modelId": {
+          "type": "number",
+          "description": "modelId"
+        },
+        "TMSAction": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TMSAction"
+          }
+        }
+      }
+    },
+    "TMSAction": {
+      "required": [
+        "seqNo",
+        "displayName"
+      ],
+      "properties": {
+        "seqNo": {
+          "type": "number",
+          "description": "seqNo"
+        },
+        "displayName": {
+          "type": "string",
+          "description": "displayName"
+        },
+        "role": {
+          "type": "object",
+          "items": {
+            "$ref": "#/definitions/role"
+          }
+        },
+        "checklist": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/checklist"
+          }
+        }
+      }
+    },
+    "role": {
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "id"
+        },
+        "description": {
+          "type": "string",
+          "description": "description"
+        }
+      }
+    },
+    "attachmentTag": {
+      "required": [
+        "code"
+      ],
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "code"
+        },
+        "displayText": {
+          "type": "string",
+          "description": "displayText"
+        }
+      }
+    },
+    "buildCheckList": {
+      "required": [
+        "trNumber"
+      ],
+      "properties": {
+        "trNumber": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "gateCheckList": {
+      "required": [
+        "crTicketNumber",
+        "releaseNumber",
+        "seqNo",
+        "displayName",
+        "checklist"
+      ],
+      "properties": {
+        "crTicketNumber": {
+          "type": "string",
+          "description": "the crTicketNumber data"
+        },
+        "releaseNumber": {
+          "type": "string",
+          "description": "the releaseNumber data"
+        },
+        "seqNo": {
+          "type": "string",
+          "description": "the seqNo data"
+        },
+        "displayName": {
+          "type": "string",
+          "description": "the displayName data"
+        },
+        "gatePassed": {
+          "type": "boolean",
+          "description": "the gatePassed data"
+        },
+        "checklist": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/checkList"
+          }
+        }
+      }
+    },
+    "checkList": {
+      "required": [],
+      "properties": {
+        "srno": {
+          "type": "string",
+          "description": "srno"
+        },
+        "value": {
+          "type": "string",
+          "description": "value"
+        },
+        "attachment": {
+          "type": "string",
+          "description": "attachment"
+        },
+        "comments": {
+          "type": "string",
+          "description": "comments"
+        }
+      }
+    },
+    "searchSAPUsers": {
+      "required": [
+        "userName",
+        "server",
+        "client"
+      ],
+      "properties": {
+        "userName": {
+          "type": "string",
+          "description": "the crTicketNumber data"
+        },
+        "server": {
+          "type": "string",
+          "description": "the releaseNumber data"
+        },
+        "client": {
+          "type": "string",
+          "description": "the seqNo data"
+        }
+      }
+    },
+    "crcheckTransport": {
+      "required": [
+        "transportRequest"
+      ],
+      "properties": {
+        "transportRequest": {
+          "type": "string",
+          "description": "the crTicketNumber data"
+        },
+        "AttachmentFlag": {
+          "type": "boolean",
+          "description": "AttachmentFlag"
+        }
+      }
+    },
+    "releaseMergeStatusSap": {
+      "required": [
+        "ET_RETURN",
+        "EX_REQUEST"
+      ],
+      "properties": {
+        "ET_RETURN": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "EX_REQUEST": {
+          "type": "string",
+          "description": "the EX_REQUEST data"
+        },
+        "EX_CHILD": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "IT_REQUESTS": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "IV_RELEASE": {
+          "type": "string",
+          "description": "IV_RELEASE"
+        }
+      }
+    },
+    "sequencePDtransport": {
+      "required": [
+        "trNumber",
+        "seqNo"
+      ],
+      "properties": {
+        "trNumber": {
+          "type": "string",
+          "description": "the trNumber data"
+        },
+        "seqNo": {
+          "type": "string",
+          "description": "the seqNo data"
+        }
+      }
+    },
+    "releaseTRBatch": {
+      "required": [],
+      "properties": {
+        "transportReqs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "trImportStatus": {
+      "required": [
+        "transportRequest"
+      ],
+      "properties": {
+        "transportRequest": {
+          "type": "string",
+          "description": "the crTicketNumber data"
+        },
+        "environment": {
+          "type": "string",
+          "description": "environment"
+        }
+      }
+    },
+    "objectLock": {
+      "required": [
+        "objectType",
+        "keyType"
+      ],
+      "properties": {
+        "objectType": {
+          "type": "string",
+          "description": "the objectType data"
+        },
+        "keyType": {
+          "type": "string",
+          "description": "keyType"
+        }
+      }
+    },
+    "removeObjectLock": {
+      "required": [
+        "object_id"
+      ],
+      "properties": {
+        "object_id": {
+          "type": "string",
+          "description": "the objectType data"
+        }
+      }
+    },
+    "releaseRemarks": {
+      "required": [
+        "crTicketNumber",
+        "releaseNumber",
+        "trackApprover"
+      ],
+      "properties": {
+        "crTicketNumber": {
+          "type": "number",
+          "description": "the crTicketNumber data"
+        },
+        "releaseNumber": {
+          "type": "number",
+          "description": "the releaseNumber data"
+        },
+        "trackApprover": {
+          "type": "boolean",
+          "description": "the trackApprover data"
+        }
+      }
+    },
+    "sequenceTransport": {
+      "required": [
+        "crTicketNumber",
+        "transportRequest",
+        "seqNo"
+      ],
+      "properties": {
+        "crTicketNumber": {
+          "type": "string",
+          "description": "the crTicketNumber data"
+        },
+        "transportRequest": {
+          "type": "string",
+          "description": "the transportRequest data"
+        },
+        "seqNo": {
+          "type": "string",
+          "description": "the seqNo data"
+        }
+      }
+    }
+  },
+  "responses": {},
+  "parameters": {},
+  "tags": [
+    {
+      "name": "Transport Collection",
+      "description": "Transport Request collection"
+    },
+    {
+      "name": "landscape Collection",
+      "description": "landscape Request collection"
+    },
+    {
+      "name": "TR Operations",
+      "description": "TR Operations collection"
+    },
+    {
+      "name": "checklist Collection",
+      "description": "update checklist Request collection"
+    },
+    {
+      "name": "PDF Collection",
+      "description": "PDF request collection"
+    },
+    {
+      "name": "TMS Action Collection",
+      "description": "tms action actionrt request collection"
+    },
+    {
+      "name": "Utility",
+      "description": "Utility collection"
+    }
+  ],
+  "extraInfo": {
+    "bizOwner": "Balpreet Singh",
+    "bizOwnerMail": "Balpreet.Singh@ril.com",
+    "endpointSecurityScheme": "nonsecured",
+    "endpointSecurityAuthType": "",
+    "endpointSecurityUsername": "",
+    "endpointSecurityPassword": "",
+    "tags": "RIIMS",
+    "techOwner": "Harshad Makwana",
+    "techOwnerMail": "Harshad.Makwana@ril.com",
+    "tiersCollection": "Unlimited",
+    "visibility": "public",
+    "CORSAllowOrigins": "http://rsevadev.ril.com"
+  }
+}
